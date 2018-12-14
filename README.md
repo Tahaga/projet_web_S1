@@ -11,6 +11,10 @@ Maquette de site marchand statique pour le cours de web du semestre 1.
     <li> Affinage du menu </li>
     <li> Bouton qui apparaît pour remonter </li>
     <li> Eventuellement carousel </li>
+    <li> nom du site cilcable</li>
+    <li> mettre le menu plus epais quand on est tout en haut du site</li>
+    <li> description sous les bouton du menu .? </li>
+    <li> resoudre probleme d affichage du carousel</li>
 </ul>
 
 <h2> Daniel : </h2>
