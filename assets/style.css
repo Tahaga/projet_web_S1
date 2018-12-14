@@ -1,3 +1,27 @@
 body {
     background-color: pink;
 }
+
+header {
+    height: 12vh;
+    background-color: #1C2228;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header button {
+    color: white;
+    height: 100%;
+    width: 14em;
+    margin: 0em 1em;
+    
+}
+
+.btn {
+    background-color: #1C2228;
+    border: #1C2228;
+}
+
+.btn:hover{
+    background-color: #F48FB1;
+}
