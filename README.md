@@ -20,4 +20,9 @@ A faire :
 <ul>
     <li> Liens au clic sur les boutons </li>
     <li> Adapter boutons </li>
+    <li> Couleur menus pour savoir où on en est </li>
+    <li> Hover logo </li>
+    <li> Carousel </li>
+    <li> Contraste deuxième section </li>
+    <li> Adapter boutons </li>
 </ul>
