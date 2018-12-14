@@ -3,7 +3,7 @@
 
 body {
     font-family : 'Open Sans';
-    background-color: lightgrey;
+    background-color: rgba(28, 36, 39, 0.904);
 }
 
 
@@ -22,7 +22,7 @@ header {
 header .btn {
     color: white;
     height: 100%;
-    width: 14em;
+    width: 12em;
     margin: 0em 1em;
     font-size: 10pt;
 }
@@ -40,7 +40,7 @@ header p {
 }
 
 #titre {
-    position: absolute;
+    position: ;
     right: 76vw;
     align-self: center;
     margin: 0px;
@@ -84,7 +84,7 @@ header input{
 
 #accueil{
     height: 100vh;
-    background-image: url("code.jpg");
+    background: url("code.jpg") fixed no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,29 @@ header input{
 
 #accueil img{
     height: 30vh;
+}
+
+#presentation {
+    color: white;
+    text-align: center;
+    padding: 7em 11em;
+}
+
+#presentation h2 {
+    font-weight: bold;
+}
+
+#imageDev{
+    height: 50%;
+}
+
+#carouselExampleSlidesOnly{
+    height: 40vh;
+    z-index: -1;
+}
+
+#projets_stars{
+    height: 60vh;
 }
 
 footer {
