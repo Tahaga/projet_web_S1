@@ -82,6 +82,7 @@ header input{
     background-color: #F48FB1;
 }
 
+
 #accueil{
     height: 100vh;
     background-image: url("code.jpg");
@@ -100,6 +101,7 @@ header input{
 #accueil img{
     height: 30vh;
 }
+
 
 footer {
 	background-color : #3C4147;
