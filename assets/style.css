@@ -13,6 +13,10 @@ header {
     background-color: #2C333A;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
 }
 
 header .btn {
@@ -76,6 +80,25 @@ header input{
 
 .btn:hover{
     background-color: #F48FB1;
+}
+
+#accueil{
+    height: 100vh;
+    background-image: url("code.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil p{
+    font-weight: bold;
+    color: white;
+    font-size: 40pt;
+}
+
+#accueil img{
+    height: 30vh;
 }
 
 footer {
