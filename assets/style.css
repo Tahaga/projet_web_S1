@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Acme|Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
+    font-family : 'Open Sans';
     background-color: lightgrey;
 }
 
@@ -13,16 +15,35 @@ header {
     justify-content: flex-end;
 }
 
-header button {
+header .btn {
     color: white;
     height: 100%;
     width: 14em;
     margin: 0em 1em;
-    
+    font-size: 10pt;
+}
+
+header p {
+    font-size: 20pt;
+    display:inline;
+    font-family: 'Major mono display';
+    color: white;
+    font-weight: bold;
+}
+
+#un  {
+    font-weight: 100;
+}
+
+#titre {
+    position: absolute;
+    right: 76vw;
+    align-self: center;
+    margin: 0px;
 }
 
 
-header img {
+header #logoImg {
     height: 8vh;
     align-self: center;
     position:  absolute;
@@ -33,12 +54,20 @@ header img {
 header input{
     color: #2C333A;
     align-self: center;
-    order: -1;
-    width: 2em;
-    flex: 1;
+    order: 1;
 }
 
+.form-control {
+    height: 5vh;
+    width : 20vw;
+    font-size: 10pt;
+}
 
+#recherche {
+    order: 2;
+    height: 6vh;
+    align-self: center;
+}
 
 .btn {
     background-color: #2C333A;

@@ -12,3 +12,12 @@ Maquette de site marchand statique pour le cours de web du semestre 1.
     <li> Bouton qui apparaît pour remonter </li>
     <li> Eventuellement carousel </li>
 </ul>
+
+<h2> Daniel : </h2>
+Avancée du header :
+<img src="https://i.ibb.co/G0TF9hh/Screenshot-12.png">
+A faire : 
+<ul>
+    <li> Liens au clic sur les boutons </li>
+    <li> Adapter boutons </li>
+</ul>
