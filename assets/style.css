@@ -65,12 +65,22 @@ header input{
     height: 5vh;
     width : 20vw;
     font-size: 10pt;
+    transition: all 1s ease-in-out;
+}
+
+.form-control:focus{
+    width: 120%;
 }
 
 #recherche {
     order: 2;
     height: 6vh;
     align-self: center;
+    transition: all 1s ease-in-out;
+}
+
+#recherche:hover{
+    height: 8vh;
 }
 
 .btn {
@@ -99,6 +109,11 @@ header input{
 
 #accueil img{
     height: 30vh;
+    transition: all 1s ease-in-out;
+}
+
+#accueil img:hover { 
+    transform: scale(1.1); 
 }
 
 #presentation {
