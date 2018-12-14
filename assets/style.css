@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Acme|Francois+One');
+
 body {
-    background-color: pink;
+    background-color: lightgrey;
 }
+
+
 
 header {
     height: 10vh;
@@ -43,4 +47,10 @@ header input{
 
 .btn:hover{
     background-color: #F48FB1;
+}
+
+footer {
+	background-color : #3C4147;
+	margin: auto;
+
 }
