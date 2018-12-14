@@ -3,8 +3,8 @@ body {
 }
 
 header {
-    height: 12vh;
-    background-color: #1C2228;
+    height: 10vh;
+    background-color: #2C333A;
     display: flex;
     justify-content: flex-end;
 }
@@ -17,9 +17,28 @@ header button {
     
 }
 
+
+header img {
+    height: 8vh;
+    align-self: center;
+    position:  absolute;
+    right: 95vw;
+    order: -2;
+}
+
+header input{
+    color: #2C333A;
+    align-self: center;
+    order: -1;
+    width: 2em;
+    flex: 1;
+}
+
+
+
 .btn {
-    background-color: #1C2228;
-    border: #1C2228;
+    background-color: #2C333A;
+    border: #2C333A;
 }
 
 .btn:hover{
