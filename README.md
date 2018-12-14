@@ -15,6 +15,8 @@ Maquette de site marchand statique pour le cours de web du semestre 1.
     <li> mettre le menu plus epais quand on est tout en haut du site</li>
     <li> description sous les bouton du menu .? </li>
     <li> resoudre probleme d affichage du carousel</li>
+    <li> resoudre prblm de titre qui est sous le logo</li>
+    <li> faire une belle page ereur 404</li>
 </ul>
 
 <h2> Daniel : </h2>
