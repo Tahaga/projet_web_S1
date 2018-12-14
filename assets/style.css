@@ -1,9 +1,10 @@
-body {
-    background-color: pink;
-}
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Abel|Acme|Francois+One');
-=======
+
+body {
+    background-color: lightgrey;
+}
+
+
 
 header {
     height: 12vh;
@@ -28,4 +29,9 @@ header button {
 .btn:hover{
     background-color: #F48FB1;
 }
->>>>>>> 6c15ad396353b74b3a6c01e81fd5596c3df8022c
+
+footer {
+	background-color : #3C4147;
+	margin: auto;
+
+}
