@@ -2,7 +2,7 @@
 Maquette de site marchand statique pour le cours de web du semestre 1.
 
 <ul>
-    <li> Ajouter le logo de recherche</li>
+    <li color="green"> Ajouter le logo de recherche</li>
     <li> Footer </li>
     <li> Découpage logos réseaux </li>
     <li> Recherche photos + structure base d'accueil </li>
@@ -15,7 +15,7 @@ Maquette de site marchand statique pour le cours de web du semestre 1.
 
 <h2> Daniel : </h2>
 Avancée du header :
-<img src="https://i.ibb.co/G0TF9hh/Screenshot-12.png">
+<img src="https://i.ibb.co/47dJ2QQ/Screenshot-12.png">
 A faire : 
 <ul>
     <li> Liens au clic sur les boutons </li>
