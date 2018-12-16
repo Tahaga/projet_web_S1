@@ -1,5 +1,5 @@
 # projet_web_S1
-Maquette de site marchand statique pour le cours de web du semestre 1.
+Maquette de site marchand statique pour le cours de web du semestre 1. </br>
 <strong>Preview ici : https://iutdoua-web.univ-lyon1.fr/~p1801076/S1 </strong>
 
 <h2> Accueil (index.html) : </h2>
