@@ -17,6 +17,7 @@ header {
     left:0;
     top:0;
     right:0;
+    z-index: 50; /* Un peu abusé, mais je m'assure que le header passe devant tout, cf le problème de png */
 }
 
 header .btn {
@@ -35,24 +36,37 @@ header p {
     font-weight: bold;
 }
 
+header a{
+    display : inline;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
 #un  {
     font-weight: 100;
 }
 
-#titre {
-    position: ;
-    right: 76vw;
+#lien_texte {
+    /*position: ;
+    right: 76vw;*/
     align-self: center;
-    margin: 0px;
+    margin-left: 0.5em;
 }
 
 
-header #logoImg {
+#logoImg {
     height: 8vh;
-    align-self: center;
-    position:  absolute;
-    right: 95vw;
+    /*position:  absolute;
+    right: 95vw;*/
+}
+
+#lienImg{
     order: -2;
+    margin-left: 0.5em;
+    align-self: center;
 }
 
 header input{
