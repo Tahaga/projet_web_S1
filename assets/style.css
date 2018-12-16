@@ -145,13 +145,13 @@ header input{
     height: 50%;
 }
 
-#carouselExampleSlidesOnly{
-    height: 40vh;
-    z-index: -1;
+.carousel-item{
+    height: 90vh;
 }
 
-#projets_stars{
-    height: 60vh;
+.carousel-caption h2 {
+    font-style: italic;
+    font-weight: bold;
 }
 
 
