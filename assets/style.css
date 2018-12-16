@@ -67,6 +67,7 @@ header a:hover{
     order: -2;
     margin-left: 0.5em;
     align-self: center;
+    margin: auto;
 }
 
 header input{
@@ -146,6 +147,7 @@ header input{
 }
 
 .carousel-item{
+    /*border-top: 2px dotted grey; */
     height: 90vh;
 }
 
@@ -156,7 +158,33 @@ header input{
 
 
 footer {
-	background-color : #3C4147;
-	margin: auto;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+	background-color :rgb(22, 28, 31);
+    margin: auto;
+    height: 55vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+}
 
+footer p span{
+    font-weight: bold;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+footer img {
+    width: 30%;
+    align-self: center;
+}
+
+footer :last-child{
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 1em;
 }
