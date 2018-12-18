@@ -22,6 +22,7 @@ header {
     left:0;
     top:0;
     right:0;
+    z-index: 50; /* Un peu abusé, mais je m'assure que le header passe devant tout, cf le problème de png */
 }
 
 header .btn {
@@ -40,24 +41,38 @@ header p {
     font-weight: bold;
 }
 
+header a{
+    display : inline;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
 #un  {
     font-weight: 100;
 }
 
-#titre {
-    position: ;
-    right: 76vw;
+#lien_texte {
+    /*position: ;
+    right: 76vw;*/
     align-self: center;
-    margin: 0px;
+    margin-left: 0.5em;
 }
 
 
-header #logoImg {
+#logoImg {
     height: 8vh;
-    align-self: center;
-    position:  absolute;
-    right: 95vw;
+    /*position:  absolute;
+    right: 95vw;*/
+}
+
+#lienImg{
     order: -2;
+    margin-left: 0.5em;
+    align-self: center;
+    margin: auto;
 }
 
 header input{
@@ -97,6 +112,7 @@ header input{
     background-color: #F48FB1;
 }
 
+
 #accueil{
     height: 100vh;
     background: url("code.jpg") fixed no-repeat;
@@ -135,17 +151,45 @@ header input{
     height: 50%;
 }
 
-#carouselExampleSlidesOnly{
-    height: 40vh;
-    z-index: -1;
+.carousel-item{
+    /*border-top: 2px dotted grey; */
+    height: 90vh;
 }
 
-#projets_stars{
-    height: 60vh;
+.carousel-caption h2 {
+    font-style: italic;
+    font-weight: bold;
 }
+
 
 footer {
-	background-color : #3C4147;
-	margin: auto;
+    border-top: 1px dotted grey;
+    color: grey;
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+    height: 55vh;
+    text-align: center;
+    margin: auto;
+	background-color :rgb(22, 28, 31);
+    border-bottom: 1px dotted grey;
+}
 
+footer p span{
+    font-weight: bold;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+footer img {
+    width: 30%;
+    align-self: center;
+}
+
+footer :last-child{
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 1em;
 }
