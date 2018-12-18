@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* SOURCES
+TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
+DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
+*/
+
 body {
     font-family : 'Open Sans';
     background-color: rgba(28, 36, 39, 0.904);
