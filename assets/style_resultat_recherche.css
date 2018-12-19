@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* SOURCES
+TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
+DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
+*/
+
+body {
+    font-family : 'Open Sans';
+    background-color: rgba(28, 36, 39, 0.904);
+}
+
+
+
+header {
+    height: 10vh;
+    background-color: #2C333A;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 50; /* Un peu abusé, mais je m'assure que le header passe devant tout, cf le problème de png */
+}
+
+header .btn {
+    color: white;
+    height: 100%;
+    min-width: 11em; /* à adapter pour le responsive */
+    padding: 0em 0.7em;
+    margin: 0em 1em;
+    font-size: 10pt;
+}
+
+header p {
+    font-size: 20pt;
+    display:inline;
+    font-family: 'Major mono display';
+    color: white;
+    font-weight: bold;
+}
+
+header a{
+    display : inline;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+#un  {
+    font-weight: 100;
+}
+
+/* fusionner en un lien sur le div! */
+#lien_texte {
+    align-self: center;
+    margin-left: 1em;
+}
+
+
+#logoImg {
+    height: 8vh;
+}
+
+#lienImg{
+    align-self: center;
+    margin-left: 0.7em;
+}
+
+#left_flex_container{
+    align-self: center;
+    margin-right: auto;
+    display:flex;
+}
+
+header input{
+    color: #2C333A;
+    align-self: center;
+    order: 1;
+}
+
+.form-control {
+    height: 5vh;
+    width : 20vw;
+    font-size: 10pt;
+    transition: all 1s ease-in-out;
+}
+
+.form-control:focus{
+    width: 120%;
+}
+
+#recherche {
+    order: 2;
+    height: 6vh;
+    align-self: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+#recherche:hover{
+    height: 8vh;
+}
+
+.btn {
+    background-color: #2C333A;
+    border: #2C333A;
+}
+
+.btn:hover{
+    background-color: #F48FB1;
+}
+
+
+footer {
+    border-top: 1px dotted grey;
+    color: grey;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+	background-color :rgb(22, 28, 31);
+    border-bottom: 1px dotted grey;
+}
+
+footer > div {
+    width: 33%;
+}
+
+footer p span{
+    font-weight: bold;
+}
+
+footer h3 {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+footer img {
+    width: 65%;
+    align-self: center;
+}
+
+#img_reseaux img {
+    width: 3em;
+    margin: 1em;
+}
+
+body:last-child {
+    text-align: center;
+    color : lightgray;
+    
+}
