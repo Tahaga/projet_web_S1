@@ -11,6 +11,7 @@ Maquette de site marchand statique pour le cours de web du semestre 1. </br>
     <li> faire une belle page ereur 404</li>
     <li> Couleur menus pour savoir où on en est </li>
 	<li> ajouter suivant quand hover des button du carousel</li>
+    <li> ARRANGER PROBLEME IMAGE + COPYRIGHT EN BAS </li>
 </ul>
 
 !!! Redistribuer qui fait quelle page
