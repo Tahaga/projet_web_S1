@@ -160,7 +160,7 @@ header input{
 }
 
 .carousel-caption {
-    background-color: rgba(244, 143, 177, 0.49); /* hex to rgba converter utilisé : http://hex2rgba.devoth.com/ */
+    background-color: rgba(244, 143, 177, 0.60); /* hex to rgba converter utilisé : http://hex2rgba.devoth.com/ */
     border-radius: 80px;
     opacity: 50%;
     padding: 0.5em 1em;
