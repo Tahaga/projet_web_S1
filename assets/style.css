@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* SOURCES
+TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
+DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
+*/
+
 body {
     font-family : 'Open Sans';
     background-color: rgba(28, 36, 39, 0.904);
@@ -23,7 +28,8 @@ header {
 header .btn {
     color: white;
     height: 100%;
-    width: 12em;
+    min-width: 11em; /* à adapter pour le responsive */
+    padding: 0em 0.7em;
     margin: 0em 1em;
     font-size: 10pt;
 }
@@ -49,25 +55,26 @@ header a:hover{
     font-weight: 100;
 }
 
+/* fusionner en un lien sur le div! */
 #lien_texte {
-    /*position: ;
-    right: 76vw;*/
     align-self: center;
-    margin-left: 0.5em;
+    margin-left: 1em;
 }
 
 
 #logoImg {
     height: 8vh;
-    /*position:  absolute;
-    right: 95vw;*/
 }
 
 #lienImg{
-    order: -2;
-    margin-left: 0.5em;
     align-self: center;
-    margin: auto;
+    margin-left: 0.7em;
+}
+
+#left_flex_container{
+    align-self: center;
+    margin-right: auto;
+    display:flex;
 }
 
 header input{
@@ -119,6 +126,7 @@ header input{
 }
 
 #accueil p{
+    text-align: center;
     font-weight: bold;
     color: white;
     font-size: 40pt;
