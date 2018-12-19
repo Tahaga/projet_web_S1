@@ -92,6 +92,7 @@ header input{
     height: 6vh;
     align-self: center;
     transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 
 #recherche:hover{
@@ -130,6 +131,7 @@ header input{
 
 #accueil img:hover { 
     transform: scale(1.1); 
+    cursor: pointer;
 }
 
 #presentation {
@@ -176,6 +178,7 @@ footer p span{
 
 footer h3 {
     font-weight: bold;
+padding-bottom: 3%;
 }
 
 footer img {
@@ -187,4 +190,7 @@ footer :last-child{
     font-style: italic;
     margin-bottom: 0px;
     margin-top: 1em;
+}
+
+
 }
