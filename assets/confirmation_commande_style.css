@@ -35,7 +35,6 @@ header .btn {
     font-size: 10pt;
 }
 
-
 header p {
     font-size: 20pt;
     display:inline;
@@ -85,15 +84,15 @@ header input{
     order: 1;
 }
 
-.form-control {
+header .form-control {
     height: 5vh;
     width : 20vw;
     font-size: 10pt;
     transition: all 2s ease-in-out;
 }
 
-.form-control:focus{
-    width: 150%;
+header .form-control:focus{
+    width: 120%;
 }
 
 #recherche {
@@ -108,25 +107,10 @@ header input{
     height: 8vh;
 }
 
+
 .btn {
     background-color: #2C333A;
     border: #2C333A;
-    outline: none;
-}
-
-.btn:hover,
-.btn:focus,
-.btn::-moz-focus-inner,
-.btn:focus {
-    background-color: #F48FB1;
-    outline: none;
-    border: none;
-    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
-    0 0 0 1.5px rgba(255, 105, 180, 0.5);
-}
-
-.btn:hover{
-    background-color: #F48FB1;
 }
 
 .btn-group {
@@ -134,70 +118,121 @@ header input{
 }
 
 
-#accueil{
-    height: 100vh;
-    background: url("code.jpg") fixed no-repeat;
+.btn:hover{
+    background-color: #F48FB1;
+}
+
+section{
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 7vh;
+}
+
+section h1 {
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+#commande {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-#accueil p{
+form .btn{
+    margin-top: 1em;
+    margin-bottom: -1em;
+    width: 10em;
     text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size: 40pt;
+    height: 3em;
 }
 
-#accueil img{
-    height: 30vh;
-    transition: all 1s ease-in-out;
+
+table{
+    background-color: #F48FB1;
+    transition: all 2s ease-in-out;
 }
 
-#accueil img:hover { 
-    transform: scale(1.1); 
-    cursor: pointer;
-}
-
-#presentation {
-    color: white;
-    text-align: center;
-    padding: 7em 11em;
-}
-
-#presentation h2 {
-    font-weight: bold;
-}
-
-#imageDev{
-    height: 50%;
-}
-
-#mobile_promos {
-    display: none;
-}
-
-.carousel-item{
-    /*border-top: 2px dotted grey; */
-    height: 90vh;
-}
-
-.carousel-caption h2 {
+table p {
+    font-size: 0.8rem;
     font-style: italic;
-    font-weight: bold;
-    color: white;
+    margin-top: 0.5em;
+    margin-bottom: -0.1em;
 }
 
-.carousel-caption {
-    background-color: rgba(244, 143, 177, 0.60); /* hex to rgba converter utilisé : http://hex2rgba.devoth.com/ */
-    border-radius: 80px;
-    opacity: 50%;
-    padding: 0.5em 1em;
-    width: auto;
-    margin-left: 9vw;
-    margin-right: 9vw;
+td {
+    padding: 1em 2em;
+    border-top: solid 3px #2C333A;
+    border-bottom: solid 3px #2C333A;
 }
+
+tr:hover{
+    background-color: #2C333A;
+}
+
+#titre_commande:hover{
+    background-color: #F48FB1;
+}
+
+
+th{
+    font-size: 20pt;
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+tr :first-child{
+    font-weight: bold;
+}
+
+
+form{
+    margin: auto;
+    background-color: rgba(244, 143, 177, 0.30);
+    padding: 2rem;
+    border-radius: 0em;
+}
+
+form h3{
+    margin-top: 2rem;
+}
+
+form h4{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+form :first-child{
+    margin-top: 0;
+}
+
+.form-control:focus{
+    width: 100%;
+}
+
+form > label, #proprietaire > label { 
+    float: left; 
+    width: auto; 
+    margin-right: 1em; 
+    text-align: left;
+    margin-top: 1em;
+    display: block;
+}
+
+input {
+    width: 5em;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+
 
 footer {
     border-top: 1px dotted grey;
@@ -267,51 +302,31 @@ body:last-child {
         width: 7.5em;
     }
 
-    #accueil p {
-        font-size: 2rem;
-    }
+  
 
-    #presentation {
-        width: 100vw;
-        color: white;
-        text-align: center;
-        padding: 4em 0em;
-    }
-
-    #presentation p {
-        width: 100vw;
-        padding: 0em 1.5em;
-        font-size: 1.1rem;
+    section{
+        width: 95vw;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 0.5em;
     }
     
-    #presentation h2 {
-        font-weight: bold;
-        margin-bottom: 1em;
+    section h1 {
+        margin-top:13vh;
     }
     
-    #imageDev{
-        /*display: none;*/
-        height: 30%;
-    }
-
-    #mobile_promos {
-        display: block;
+    #commande {
         width: 100%;
-        background-color: rgba(244, 143, 177, 0.30);
-        margin-bottom: 0px;
-        padding: 0.5em 0em;
+        flex-direction: column;
     }
+  
     
-    .carousel-item{
-        height: 30vh;
-    }
-
-    .carousel-caption h2 {
-        display: none;
-    }
-
-    .carousel-caption {
-        display: none;
+    table{
+        margin: 0.5em 0em;
+    } 
+    
+    form{
+        order: 1;
     }
 
     footer {

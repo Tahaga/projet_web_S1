@@ -14,6 +14,7 @@ Maquette de site marchand statique pour le cours de web du semestre 1. </br>
     <li>Commande checkout</li>
     <li>A propos</li>
 </ul>
+-> Page de connection avant la validation?
 
 <h4>Timothé :</h4>
 <ul>
