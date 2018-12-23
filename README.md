@@ -16,6 +16,7 @@ Maquette de site marchand statique pour le cours de web du semestre 1. </br>
 </ul>
 -> Page après validation
 -> header décalé sur mobile validation
+-> Popups boutons
 
 <h4>Timothé :</h4>
 <ul>
