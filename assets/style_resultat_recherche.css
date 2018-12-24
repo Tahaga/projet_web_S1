@@ -114,9 +114,54 @@ header input{
 .btn:hover{
     background-color: #F48FB1;
 }
+/* fin css menu */
+section div div {
+    margin-top: 5%;
+    border : none;
+    text-indent: 5%;
+}
+section div {
+    border-bottom:  : dotted 1px white;
+}
+section h1 {
+    margin-top: 7%;
+    font-weight: bold;
+}
+section div div div div {
 
+    margin-left: 3%;
+    margin-top: 3%;
+    border : 3px solid #5F5F5F;
+    border-radius: 7%;
+    background-color: darkgrey;
+    color: dimgrey;
+    padding: 1% 4% 1% 4%;
 
+}
+section div p {
+    text-align: justify;
+}
+section h2 {
+    margin-top: 5%;
+
+}
+section div img {
+    margin-top: 5%;
+    margin-bottom: 12%;
+}
+section div span  h1:first-child {
+    font-weight: normal;
+    text-decoration: underline;
+}
+section .btn {
+    background-color:pink;
+    border:2px solid hotpink; 
+    margin-top : 2%;
+}
+
+/*debut css footer */
 footer {
+    margin-top: 5%;
     border-top: 1px dotted grey;
     color: grey;
     display:flex;
