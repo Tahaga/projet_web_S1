@@ -157,6 +157,11 @@ section .btn {
     background-color:pink;
     border:2px solid hotpink; 
     margin-top : 2%;
+    padding: 2%;
+}
+section .btn:hover{
+   width: 19%;
+   color: white;
 }
 
 /*debut css footer */
