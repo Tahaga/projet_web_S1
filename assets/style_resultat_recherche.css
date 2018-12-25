@@ -138,6 +138,9 @@ section div div div div {
     padding: 1% 4% 1% 4%;
 
 }
+.marge_0 {
+    margin-left:0%;
+}
 section div p {
     text-align: justify;
 }
