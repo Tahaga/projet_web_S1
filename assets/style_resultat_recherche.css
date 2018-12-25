@@ -155,6 +155,7 @@ section div img {
 section div span  h1:first-child {
     font-weight: normal;
     text-decoration: underline;
+    margin-top:75pt;
 }
 section .btn {
     background-color:pink;
