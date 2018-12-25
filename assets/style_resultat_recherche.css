@@ -128,7 +128,7 @@ section h1 {
     font-weight: bold;
 }
 section div div div div {
-
+    overflow: hidden;
     margin-left: 3%;
     margin-top: 3%;
     border : 3px solid #5F5F5F;
@@ -138,9 +138,7 @@ section div div div div {
     padding: 1% 4% 1% 4%;
 
 }
-.marge_0 {
-    margin-left:0%;
-}
+
 section div p {
     text-align: justify;
 }
@@ -209,4 +207,9 @@ body:last-child {
     text-align: center;
     color : lightgray;
     
+}
+@media (max-width:588px) {
+    section div div div div {
+        margin-left: 0%;
+    }
 }
