@@ -114,7 +114,11 @@ header .form-control:focus{
 
 .btn {
     background-color: #2C333A;
-    border: #2C333A;
+    border: #2C333B;
+}
+
+header form {
+    display: inline;
 }
 
 .btn-group {
@@ -147,7 +151,7 @@ section h1 {
     align-items: center;
 }
 
-form .btn{
+section form .btn{
     margin-top: 1em;
     margin-bottom: -1em;
     width: 10em;
@@ -159,6 +163,7 @@ form .btn{
 table{
     background-color: #F48FB1;
     transition: all 2s ease-in-out;
+    border: 1px solid white;
 }
 
 table p {
@@ -194,23 +199,24 @@ tr :first-child{
 }
 
 
-form{
+section form{
     margin: auto;
     background-color: rgba(244, 143, 177, 0.30);
     padding: 2rem;
-    border-radius: 0em;
+    border-radius: 1em;
+    border: 1px dotted white;
 }
 
-form h3{
+section form h3{
     margin-top: 2rem;
 }
 
-form h4{
+section form h4{
     margin-top: 1rem;
     font-size: 1.3rem;
 }
 
-form :first-child{
+section form :first-child{
     margin-top: 0;
 }
 
@@ -218,7 +224,7 @@ form :first-child{
     width: 100%;
 }
 
-form > label, #proprietaire > label { 
+section form > label, #proprietaire > label { 
     float: left; 
     width: auto; 
     margin-right: 1em; 
@@ -237,6 +243,17 @@ textarea{
 }
 
 
+#remerciements {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#remerciements img {
+    height: 35vh;
+    width: 35vh;
+}
 
 footer {
     border-top: 1px dotted grey;
@@ -302,8 +319,8 @@ body:last-child {
         margin-right: 0.1em;
     }
 
-    #barre_recherche {
-        width: 7.5em;
+    #remerciements {
+        margin-top: 10vh;
     }
 
   

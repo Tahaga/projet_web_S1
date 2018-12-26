@@ -1,33 +1,30 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adopte un projet.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/confirmation_commande_style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/logo transparence.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo_transparence.png" />
 </head>
 <body>
         <header>
-                <div id="left_flex_container"><a id="lienImg" href="index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
-                <a href="index.html" id="lien_texte"><span id="titre"><p>adopte</p><p id="un">un</p><p>projet.com</p></span></a></div>
-                <a href="index.html"><button type="button" class="btn btn-primary" id="accueil_but">Accueil</button>
-                <a href=""><button type="button" class="btn btn-primary">Projets adoptés</button>
-                <a href="a_propos.html"><button type="button" class="btn btn-primary">Qui sommes-nous?</button>
-                <a href="confirmation_commande.html"><button type="button" class="btn btn-primary">Valider sa commande</button></a>
+                <div id="left_flex_container"><a id="lienImg" href="../index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
+                    <a href="../index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a></div>
+                    <form method="GET" action="../index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
+                    <form method="GET" action="../a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
+                    <form method="GET" action="confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
                 <div class="btn-group">
                     <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Valider sa commande
                     </button>
                     <div class="dropdown-menu">
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Projets adoptés</a>
+                      <a class="dropdown-item" href="../a_propos/a_propos.html">Qui sommes-nous?</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="a_propos.html">Qui sommes-nous?</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="index.html">Accueil</a>
+                      <a class="dropdown-item" href="../index.html">Accueil</a>
                     </div>
                   </div>
                 <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
@@ -37,31 +34,34 @@
     <section>
         <h1>Validation de votre commande</h1>
         <div id="commande">
-            <form>
+            <form method="post" action="merci_commande.html">
                     <h3>Votre compte :</h3>
+                    <!-- Je suis conscient que dans le cours, on utilisait l'attribut NAME dans les input, et c'est celui-ci que l'on mettait 
+                    dans les "for". Cependant, le validateur affichait des warnings sur cela réclamant des ID ! C'est pourquoi nous avons utilisés
+                    des ID ici. -->
                     <label for="email_input">Votre adresse mail : </label>
-                    <input type="text" name="email_input" class="form-control" placeholder="example@xyz.com">
+                    <input type="text" id="email_input" class="form-control" placeholder="example@xyz.com">
 
                     <label for="nom_input">Nom : </label>
-                    <input type="text" name="nom_input" class="form-control" placeholder="Jean">
+                    <input type="text" id="nom_input" class="form-control" placeholder="Jean">
 
                     <label for="prenom_input">Prénom : </label>
-                    <input type="text" name="prenom_input" class="form-control" placeholder="Valjean">
+                    <input type="text" id="prenom_input" class="form-control" placeholder="Valjean">
 
                     <label for="adresse_input">Comment nous avez-vous connu?</label>
-                    <textarea name="adresse_input" class="form-control" placeholder="Dites nous tout : on lira tout, promis!"></textarea>
+                    <textarea id="adresse_input" class="form-control" placeholder="Dites nous tout : on lira tout, promis!"></textarea>
 
                     <label for="code_input">Code promotionnel : </label>
-                    <input type="text" name="code_input" class="form-control" placeholder="Optionnel">
+                    <input type="text" id="code_input" class="form-control" placeholder="Optionnel">
 
                     <h3>Paiement :</h3>
 
                     <div id="proprietaire">
-                            <label for="nom_input">Nom : </label>
-                            <input type="text" name="nom_input" class="form-control" placeholder="Prénom du titulaire">
+                            <label for="nom_input2">Nom : </label>
+                            <input type="text" id="nom_input2" class="form-control" placeholder="Prénom du titulaire">
         
-                            <label for="prenom_input">Prénom : </label>
-                            <input type="text" name="prenom_input" class="form-control" placeholder="Nom du titulaire">
+                            <label for="prenom_input2">Prénom : </label>
+                            <input type="text" id="prenom_input2" class="form-control" placeholder="Nom du titulaire">
 
                             <h4>Type de carte :</h4>
                             <div class="control">
@@ -73,20 +73,20 @@
                                       <input type="radio" name="carte">
                                       MasterCard
                                     </label>
-                                    <label class="radio" disabled>
-                                      <input type="radio" name="carte" disabled>
-                                      CB <em>(indisponible)</em>
+                                    <label class="radio">
+                                      <input type="radio" name="carte">
+                                      CB
                                     </label>
                             </div>
 
                             <label for="no_carte_input">N° de carte :</label>
-                            <input type="number" name="no_carte_input" class="form-control" placeholder="XXX XXX XXX XXX XXX X (16)">
+                            <input type="number" id="no_carte_input" class="form-control" placeholder="XXX XXX XXX XXX XXX X (16)">
 
                             <label for="crypto_carte_input">Cryptogramme :</label>
-                            <input type="number" name="crypto_carte_input" class="form-control" placeholder="XXX (3)">
+                            <input type="number" id="crypto_carte_input" class="form-control" placeholder="XXX (3)">
 
                             <label for="date_carte_input">Date d'expiration :</label>
-                            <input type="text" name="date_carte_input" class="form-control" placeholder="mm/aaaa"> <!-- Essayé avec type=date, force l'utilisation du jour, pas cohérent pour CB, pas réussi à changer sans JS -->
+                            <input type="text" id="date_carte_input" class="form-control" placeholder="mm/aaaa"> <!-- Essayé avec type=date, force l'utilisation du jour, pas cohérent pour CB, pas réussi à changer sans JS -->
                     </div>
 
                     <button type="submit" class="btn btn-primary">Acheter!</button>
@@ -124,11 +124,11 @@
         <div id="col_reseaux">
             <h3>Nos réseaux sociaux :</h3>
             <div id="img_reseaux">
-              <img src="assets/facebook.png" alt="facebook logo">
-              <img src="assets/google-plus.png" alt="google+ logo">
-              <img src="assets/instagram.png" alt="instagram logo">
-              <img src="assets/twitter.png" alt="twitter logo">
-            </div>
+                <a href="https://facebook.com"><img src="assets/facebook.png" alt="facebook logo"></a>
+                <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
+                <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
+                <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
+              </div>
           </div>
       <div id="col_contact">
         <h3>Nous contacter :</h3>
@@ -142,9 +142,8 @@
       </div>
   </footer>
     <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

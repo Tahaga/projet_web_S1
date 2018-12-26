@@ -1,34 +1,31 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adopte un projet.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/confirmation_commande_style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/logo transparence.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo_transparence.png" />
     <link rel="stylesheet" type="text/css" href="assets/a_propos.css" />
 </head>
 <body>
     <header>
-            <div id="left_flex_container"><a id="lienImg" href="index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
-            <a href="index.html" id="lien_texte"><span id="titre"><p>adopte</p><p id="un">un</p><p>projet.com</p></span></a></div>
-            <a href="index.html"><button type="button" class="btn btn-primary" id="accueil_but">Accueil</button>
-            <a href=""><button type="button" class="btn btn-primary">Projets adoptés</button>
-            <a href="a_propos.html"><button type="button" class="btn btn-primary">Qui sommes-nous?</button>
-            <a href="confirmation_commande.html"><button type="button" class="btn btn-primary">Valider sa commande</button></a>
+            <div id="left_flex_container"><a id="lienImg" href="../index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
+            <a href="../index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a></div>
+            <form method="GET" action="../index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
+            <form method="GET" action="a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
+            <form method="GET" action="../confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
             <div class="btn-group">
                 <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Qui sommes-nous?
                 </button>
                 <div class="dropdown-menu">
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index.html">Accueil</a>
+                    <a class="dropdown-item" href="../index.html">Accueil</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Projets adoptés</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="confirmation_commande.html">Valider sa commande</a>
+                    <a class="dropdown-item" href="../confirmation_commande/confirmation_commande.html">Valider sa commande</a>
                     
                 </div>
             </div>
@@ -38,7 +35,7 @@
 
     <section id="a_propos_txt">
         <div>
-        <h1>Qui sommes-nous?</h1>
+        <h2>Qui sommes-nous?</h2>
         <p>     
             Nous sommes deux étudiants en première année de DUT informatique à l'IUT Lyon 1. Il nous a été confié la mission de créer un site marchand factice pour mettre en pratique notre cours de web.
             Un site de vente, c'est bien beau, mais que vendre? C'était le retour de l'éternelle question : <cite>"Que faire comme projet?"</cite>
@@ -46,9 +43,9 @@
         </p>
     </div>
     <div>
-        <h1>Les consignes</h1>
-        <p>
-            En gros, notre site DOIT comporter cinq pages parmi lesquelles il doit être possible de naviguer intuitivement :
+        <h2>Les consignes</h2>
+        <!-- Cf commentaire plus bas-->
+        <p> En gros, notre site DOIT comporter cinq pages parmi lesquelles il doit être possible de naviguer intuitivement :
             <ul>
                 <li>Une page de garde, affichant un message de bienvenue et les promotions en cours, et offrant un champ de recherche</li>
                 <li>Une page simulant un résultat de recherche, affichant une liste d’articles</li>
@@ -57,11 +54,11 @@
                 <li>Une page “Qui sommes-nous ?” présentant le site</li>
             </ul>
             Pour les consignes au complet, c'est <a href="https://docs.google.com/document/d/1heSyiY79-X53mM-kD593ff4FOXBUOEjS1embQl-jMS4/edit">par ici</a>!
-        </p>
+        <!-- Le validateur dit que je ferme un p que je n'ai pas ouvert ici... pourtant je ne le vois pas fermé autre part, je dois devenir fou?.. Interdiction de warnings, d'où la non-fermeture -->
     </div>
     </section>
 
-    <h1>Les créateurs :</h1>
+    <h2>Les créateurs :</h2>
 
     <section id="a_propos_img">
         <div>
@@ -78,11 +75,11 @@
         <div id="col_reseaux">
             <h3>Nos réseaux sociaux :</h3>
             <div id="img_reseaux">
-              <img src="assets/facebook.png" alt="facebook logo">
-              <img src="assets/google-plus.png" alt="google+ logo">
-              <img src="assets/instagram.png" alt="instagram logo">
-              <img src="assets/twitter.png" alt="twitter logo">
-            </div>
+                <a href="https://facebook.com"><img src="assets/facebook.png" alt="facebook logo"></a>
+                <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
+                <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
+                <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
+              </div>
           </div>
       <div id="col_contact">
         <h3>Nous contacter :</h3>
@@ -96,9 +93,8 @@
       </div>
   </footer>
     <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

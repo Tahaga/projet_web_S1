@@ -4,7 +4,6 @@
 /* SOURCES
 TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
 DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
-BACKGROUND GRADIENT : http://www.colorzilla.com/gradient-editor/
 */
 
 body {
@@ -15,6 +14,7 @@ body {
     background: linear-gradient(135deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1a2627', endColorstr='#f21a2627',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 
 
 header {
@@ -114,7 +114,11 @@ header .form-control:focus{
 
 .btn {
     background-color: #2C333A;
-    border: #2C333A;
+    border: #2C333B;
+}
+
+header form {
+    display: inline;
 }
 
 .btn-group {
@@ -126,69 +130,130 @@ header .form-control:focus{
     background-color: #F48FB1;
 }
 
-#a_propos_txt{
+section{
     height: auto;
-    padding-top: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    padding-bottom: 4em;
-    border-bottom: 1px dashed grey;
-}
-
-#a_propos_txt h1 {
-    font-weight: bold;
-    margin-bottom: 0.8em;
-}
-
-#a_propos_txt p, ul li {
-    text-align: justify;
-    width: 40vw;
-    margin: auto;
-}
-
-ul{
-    margin: 1em 0em;
-}
-
-ul li{
-    text-align: left;
-}
-
-#a_propos_img {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 1.7em;
-}
-
-#a_propos div{
-    width: 40vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 7vh;
+}
+
+section h1 {
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+#commande {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
-#a_propos_img img{
-    height: 32vh;
-    width: 32vh;
-    border-radius: 50%;
+section form .btn{
+    margin-top: 1em;
+    margin-bottom: -1em;
+    width: 10em;
+    text-align: center;
+    height: 3em;
 }
 
-#a_propos_img h3{
-    font-size: 2rem;
-    margin-bottom: 0.5em;
+
+table{
+    background-color: #F48FB1;
+    transition: all 2s ease-in-out;
+    border: 1px solid white;
 }
 
-body > h1{
-    margin-top: -0.2em;
-    margin-bottom: 1em;
+table p {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: -0.1em;
+}
+
+td {
+    padding: 1em 2em;
+    border-top: solid 3px #2C333A;
+    border-bottom: solid 3px #2C333A;
+}
+
+tr:hover{
+    background-color: #2C333A;
+}
+
+#titre_commande:hover{
+    background-color: #F48FB1;
+}
+
+
+th{
+    font-size: 20pt;
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+tr :first-child{
     font-weight: bold;
 }
 
 
+section form{
+    margin: auto;
+    background-color: rgba(244, 143, 177, 0.30);
+    padding: 2rem;
+    border-radius: 1em;
+    border: 1px dotted white;
+}
+
+section form h3{
+    margin-top: 2rem;
+}
+
+section form h4{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+section form :first-child{
+    margin-top: 0;
+}
+
+.form-control:focus{
+    width: 100%;
+}
+
+section form > label, #proprietaire > label { 
+    float: left; 
+    width: auto; 
+    margin-right: 1em; 
+    text-align: left;
+    margin-top: 1em;
+    display: block;
+}
+
+input {
+    width: 5em;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+
+#remerciements {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#remerciements img {
+    height: 35vh;
+    width: 35vh;
+}
 
 footer {
     border-top: 1px dotted grey;
@@ -254,38 +319,36 @@ body:last-child {
         margin-right: 0.1em;
     }
 
-    #barre_recherche {
-        width: 7.5em;
+    #remerciements {
+        margin-top: 10vh;
     }
 
-    #a_propos_txt{
+  
+
+    section{
+        width: 95vw;
         flex-direction: column;
-    }
-    
-    #a_propos_txt p, ul li {
-        width: 87vw;
-    }
-    
-    #a_propos_img {
-        flex-direction: column;
-    }
-    
-    #a_propos div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-    #a_propos_img h3{
+        margin: auto;
         margin-bottom: 0.5em;
-        margin-top: 1.5em;
     }
     
-    body > h1{
-        margin-top: 1.5em;
-        margin-bottom: 0.3em;
+    section h1 {
+        margin-top:13vh;
     }
-
+    
+    #commande {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    
+    table{
+        margin: 0.5em 0em;
+    } 
+    
+    form{
+        order: 1;
+    }
 
     footer {
         align-items: baseline;
@@ -313,4 +376,3 @@ body:last-child {
     }
 
 }
-
