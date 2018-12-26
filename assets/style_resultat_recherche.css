@@ -108,7 +108,7 @@ header input{
 
 .btn {
     background-color: #2C333A;
-    border: #2C333A;
+
 }
 
 .btn:hover{
@@ -120,9 +120,7 @@ section div div {
     border : none;
     text-indent: 5%;
 }
-section div {
-    border-bottom:  : dotted 1px white;
-}
+
 section h1 {
     margin-top: 7%;
     font-weight: bold;
@@ -150,7 +148,7 @@ section div img {
     margin-top: 5%;
     margin-bottom: 12%;
 }
-section div span  h1:first-child {
+section div  h1:first-child {
     font-weight: normal;
     text-decoration: underline;
     margin-top:75pt;
