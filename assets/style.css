@@ -81,7 +81,7 @@ header input{
     color: #2C333A;
     align-self: center;
     order: 1;
-    w
+    
 }
 
 .form-control {
@@ -109,7 +109,7 @@ header input{
 
 .btn {
     background-color: #2C333A;
-    border: #2C333A;
+
 }
 
 .btn:hover{
