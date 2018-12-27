@@ -32,6 +32,7 @@ header .btn {
     padding: 0em 0.7em;
     margin: 0em 1em;
     font-size: 10pt;
+    border:none;
 }
 
 header p {
@@ -139,7 +140,6 @@ section div div div div {
 
 section div p {
     text-align: justify;
-    color: grey;
 }
 section h2 {
     margin-top: 5%;
@@ -150,13 +150,14 @@ section div img {
     margin-bottom: 12%;
 }
 section div  h1:first-child {
-    font-weight: normal;
     text-decoration: underline;
-    margin-top:75pt;
+    font-weight: normal;
+    font-style: italic;
+    margin-top:15vh;
 }
 section .btn {
     background-color:pink;
-    border:1px solid palevioletred; 
+    border:2px solid hotpink; 
     margin-top : 2%;
     padding: 2%;
 }
@@ -207,6 +208,8 @@ body:last-child {
     color : lightgray;
     
 }
+
+
 @media (max-width:588px) {
     section div div div div {
         margin-left: 0%;
