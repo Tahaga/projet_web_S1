@@ -100,12 +100,19 @@ header input{
     width: 150%;
 }
 
+#lien_rech {
+    order: 3;
+    height: 10vh;
+    display: flex;
+}
+
 #recherche {
     order: 2;
     height: 6vh;
     align-self: center;
     transition: all 1s ease-in-out;
     cursor: pointer;
+    align-self: center;
 }
 
 #recherche:hover{
