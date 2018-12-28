@@ -199,7 +199,10 @@ section .container img {
 section .container button {
     margin-left: 40%;
 }
-
+section #box_det_un  button {
+    margin-left: 40%;
+    
+}
 footer {
     border-top: 1px dotted grey;
     color: grey;
