@@ -149,6 +149,7 @@ section h2 {
 }
 section .btn {
     float: left;
+    color:hotpink;
     background-color: pink;
     border : 2px solid hotpink;
     border-radius: 12%;

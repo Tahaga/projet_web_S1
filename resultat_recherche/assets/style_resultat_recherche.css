@@ -158,6 +158,7 @@ section div  h1:first-child {
 }
 section .btn {
     background-color:pink;
+    color: hotpink;
     border: 1px solid palevioletred; 
     margin-top : 2%;
     padding: 2%;
