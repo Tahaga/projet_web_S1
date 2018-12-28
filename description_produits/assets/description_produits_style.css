@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* SOURCES
+TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
+DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
+*/
+
+body {
+    font-family : 'Open Sans';
+    background-attachment: fixed;
+    background: -moz-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%, rgba(26,38,39,0.92) 1%, rgba(26,38,39,0.95) 99%, rgba(26,38,39,0.95) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1a2627', endColorstr='#f21a2627',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+header {
+    height: 10vh;
+    background-color: #2C333A;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 50; /* Un peu abusé, mais je m'assure que le header passe devant tout, cf le problème de png */
+}
+
+header .btn {
+    color: white;
+    height: 100%;
+    width: 10vw;
+    /*min-width: 11em; /* à adapter pour le responsive */
+    padding: 0em 0.7em;
+    margin: 0em 1em;
+    font-size: 10pt;
+}
+
+header p {
+    font-size: 20pt;
+    display:inline;
+    font-family: 'Major mono display';
+    color: white;
+    font-weight: bold;
+}
+
+header a{
+    display : inline;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+#un  {
+    font-weight: 100;
+}
+
+/* fusionner en un lien sur le div! */
+#lien_texte {
+    align-self: center;
+    margin-left: 1em;
+}
+
+
+#logoImg {
+    height: 8vh;
+}
+
+#lienImg{
+    align-self: center;
+    margin-left: 0.7em;
+}
+
+#left_flex_container{
+    align-self: center;
+    margin-right: auto;
+    display:flex;
+}
+
+header input{
+    color: #2C333A;
+    align-self: center;
+    order: 1;
+}
+
+header .form-control {
+    height: 5vh;
+    width : 20vw;
+    font-size: 10pt;
+    transition: all 2s ease-in-out;
+}
+
+header .form-control:focus{
+    width: 120%;
+}
+
+#lien_rech {
+    order: 3;
+    height: 10vh;
+    display: flex;
+}
+
+#recherche {
+    order: 2;
+    height: 6vh;
+    align-self: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    align-self: center;
+}
+
+#recherche:hover{
+    height: 8vh;
+}
+
+
+.btn {
+    background-color: #2C333A;
+    border: #2C333B;
+}
+
+header form {
+    display: inline;
+}
+
+.btn-group {
+    display: none;
+}
+
+
+.btn:hover{
+    background-color: #F48FB1;
+}
+section {
+    padding: 5% 15% 5% 15%
+}
+section h1 {
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+section h2 {
+    color:black;
+    font-weight: bold;
+}
+section .btn {
+    float: left;
+    background-color: pink;
+    border : 2px solid hotpink;
+    border-radius: 12%;
+
+}
+section #btn_suiv {
+    float: right;
+}
+section .btn a {
+color : hotpink;
+}
+.box_desc {
+    overflow: hidden;
+    background-color: silver;
+    border: 3px solid dimgrey;
+    border-radius: 3%;
+    padding: 1% 3% 3% 3%;
+    text-indent: 4%;
+
+}
+section div p {
+    text-align: justify;
+    color: darkslategray;
+}
+section h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#img_meteo{
+    margin-bottom: 5%;
+}
+
+section div div{
+    border: none;
+}
+#p_exemple{
+    margin-left: 15%;
+    font-size: 14px;
+}
+section h3 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+section .container img {
+    margin-bottom: 7%;
+}
+section .container button {
+    margin-left: 40%;
+}
+
+footer {
+    border-top: 1px dotted grey;
+    color: grey;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+	background-color :rgb(22, 28, 31);
+    border-bottom: 1px dotted grey;
+}
+
+footer > div {
+    width: 33%;
+}
+
+footer p span{
+    font-weight: bold;
+}
+
+footer h3 {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+footer img {
+    width: 65%;
+    align-self: center;
+}
+
+#img_reseaux img {
+    width: 3em;
+    margin: 1em;
+}
+
+body:last-child {
+    text-align: center;
+    color : lightgray;
+    
+}
+
+
+@media (max-width: 630px){
+    body{
+        width: 100vw;
+    }
+    header {
+        position: fixed;
+    }
+
+    #lien_texte, header .btn{
+        display: none;
+    }
+
+    #mobile_dropdown, .btn-group{
+        display: block;
+        margin-right: 0.5em;
+        width: auto;
+    }
+
+    #recherche {
+        margin-right: 0.1em;
+    }
+
+    #remerciements {
+        margin-top: 10vh;
+    }
+
+  
+
+    section{
+        width: 95vw;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 0.5em;
+    }
+    
+    section h1 {
+        margin-top:13vh;
+    }
+    
+    #commande {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    
+    table{
+        margin: 0.5em 0em;
+    } 
+    
+    form{
+        order: 1;
+    }
+
+    footer {
+        align-items: baseline;
+    }
+    
+    
+    footer h3 {
+        margin-top: 2em;
+        font-size: 1.3rem;
+        padding-bottom: 3%;
+    }
+    
+    footer img {
+        display: none;
+    }
+    
+    #img_reseaux img {
+        display: initial;
+        width: 2em;
+        margin: 0.4em;
+    }
+
+    body:last-child {
+        font-size: 1rem;
+    }
+
+}
+@media (max-width:588px) {
+  section {
+    padding: 0%;
+
+  }
+  section div #exempl_q {
+    overflow: hidden;
+  }
+  section .container div {
+    margin-top: 7%;
+  }
+  section h3 {
+    margin-top: 10%;
+  }
+}

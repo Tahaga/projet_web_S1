@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adopte un projet.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/description_produits_style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo_transparence.png" />
+</head>
+<body>
+        <header>
+                <div id="left_flex_container"><a id="lienImg" href="../index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
+                    <a href="../index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a></div>
+                    <form method="GET" action="../index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
+                    <form method="GET" action="../a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
+                    <form method="GET" action="confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
+                <div class="btn-group">
+                    <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Valider sa commande
+                    </button>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../a_propos/a_propos.html">Qui sommes-nous?</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html">Accueil</a>
+                    </div>
+                  </div>
+                <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
+                <a id="lien_rech" href="../resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
+            </header>
+ 
+    <section>
+        <h1>  Description du produit : `Meteo`</h1>
+        <button type="submit" class="btn btn-primary"><a href="../resultat_recherche/resultat_recherche.html">Retour</a></button>
+        <button type="submit" class="btn btn-primary" id="btn_suiv"><a href="#">Suivant</a></button>
+        <img src="assets/nuages.PNG" alt="image_box_meteo" id="img_meteo"/>
+    <div class="box_desc">
+        <h2> Meteo</h2> 
+        <p>La météo peut changer a tout moment. Or, la plupart des gens ont leur smartphone sur eux en permanence. Une application qui leur donnerait la météo en continu selon leur géolocalisation pourrait être un projet très <strong>rentable</strong> pour vous!</p>
+        <p> La météorologie est <strong>une science</strong> qui étudie des phénomènes atmosphériques comme les nuages, la pluie ou le vent dans le but de comprendre comment ils se forment en fonction des paramètres tels que <em>l'humidité</em>, la <em>pression</em>  ou la <em>température.</em></p>
+        <p> Vous devrez donc pour cet interface de presentation de la meteo pouvoir afficher l'humidité, la température et le vent. Bien evidement vous devrez montrer la prevision  possible de la meteo pour un endroi donné.</br> Par contre certain parametre seront <strong>"preniums"</strong> tels que le pression ou l'heure du levé et du couché du soleil.</br> De plus des fonctionnalité ne serons disponible uniquement avec le compte prenium comme la meteo en fonction de la geolocalisation et non pas d'une saisie d'une ville proche, la pluie en temps reel, le calcul de la meteo en direct avec les capteur du smartphone.</br> Enfin ce compte prenium sera votre principale source de <strong>revenus</strong>. C'est pourquoi il ne faudras pas que vous oubliez de mettre des fenetre pop-up de rappel de ce compte prenium et ces fonctionnalité, à l'entrée de votre application.</br>
+        Un dernier point a exploité est la priorité de connexion et d'accessibilité à l'information, en effet les comptes prenium seront plus rapide à la connexion et pour avoir votre meteo, au contraire vous ralentirer les comptes <em>basiques</em> pour leur donner envie de passer a un compte prenium.</p>
+       <div id="exempl_q">
+        <img src="assets/exempl1_meteo.png" alt="exempl1_meteo" id="exempl1_meteo">
+        <p id="p_exemple"> <em>exemple visuel :</em></p>
+    </div>
+    </div>
+
+    <h3>Projet similaires :</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 box_desc">
+              <h2>Calculatrice</h2>
+              <img src="assets/calculatrice.png" alt="image_box_calculatrice"/>
+              <p>
+                Pour les plus petits budgets, nous proposons des idées plus simples.
+                Une calculatrice pratique et epurée serait une <strong> très bonne</strong> idée <strong> simplissime</strong> à réaliser!
+              </p>
+              <button type="button" class="btn">Détails</button>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5 box_desc">
+              <h2>Cheminée</h2>
+                <img src="assets/cheminé.png" alt="image_box-cheminé">
+              <p>Qui n'a jamais rêvé de pouvoir se réchauffer grâce à son smartphone? C'est pourquoi l'application cheminée<em> doit exister</em> ! Celà permettrait aux gens de se chauffer en contrepartie d'une <strong>rémunération</strong> !</p>
+              <button type="button" class="btn">Détails</button>
+            </div>
+        </div>
+    </div>
+
+
+    </section>
+
+    <footer>
+        <div id="col_reseaux">
+            <h3>Nos réseaux sociaux :</h3>
+            <div id="img_reseaux">
+                <a href="https://facebook.com"><img src="assets/facebook.png" alt="facebook logo"></a>
+                <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
+                <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
+                <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
+              </div>
+          </div>
+      <div id="col_contact">
+        <h3>Nous contacter :</h3>
+        <p><span>Téléphone : </span>0672894351</p>
+        <p><span>Mail : </span>contact@adopteunprojet.fr</p>
+      </div>
+      <div id="col_adresse">
+        <h3>Adresse :</h3>
+        <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
+        <img src="assets/map.png" alt="map"/>
+      </div>
+  </footer>
+    <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
