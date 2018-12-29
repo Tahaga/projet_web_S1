@@ -122,23 +122,26 @@ section div div {
     text-indent: 5%;
 }
 
-section h1 {
-    margin-top: 4%;
+section h1, #apps {
+    color: #D4D6D7;
+    margin-top: 3%;
+    margin-bottom: -1%;
     font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
 }
 section div div div div {
     overflow: hidden;
     margin-left: 3%;
     margin-top: 3%;
-    border : 3px solid #5F5F5F;
     border-radius: 1.5%;
-    background-color: darkgrey;
+    background-color: rgba(255, 255, 255, 0.8);
     color: darkslategray;
     padding: 1% 4% 1% 4%;
-
 }
 
 section div p {
+    height: 20vh;
     text-align: justify;
     color: darkslategray;
 }
@@ -147,25 +150,35 @@ section h2 {
 
 }
 section div img {
+    height: 19vh;
     margin-top: 5%;
     margin-bottom: 12%;
 }
 section div  h1:first-child {
-    text-decoration: underline;
+    color: rgba(244, 143, 177, 0.6);
     font-weight: normal;
     font-style: italic;
     margin-top:15vh;
+    margin-bottom: 5vh;
 }
 section .btn {
-    background-color:pink;
-    color: hotpink;
-    border: 1px solid palevioletred; 
+    background-color:rgba(244, 143, 177, 0.6);
+    color: white;
     margin-top : 2%;
     padding: 2%;
 }
 section .btn:hover{
    width: 19%;
    color: white;
+}
+
+.col-sm-5 {
+    background-color: grey;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.col-sm-5 p {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*debut css footer */
