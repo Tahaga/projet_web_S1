@@ -26,7 +26,7 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="../index.html">Accueil</a>
                     </div>
-                  </div>
+                </div>
                 <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
                 <a id="lien_rech" href="../resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
             </header>
@@ -35,64 +35,64 @@
         <h1>Validation de votre commande</h1>
         <div id="commande">
             <form method="GET" action="./merci_commande.html">
-                    <h3>Votre compte :</h3>
-                    <!-- Je suis conscient que dans le cours, on utilisait l'attribut NAME dans les input, et c'est celui-ci que l'on mettait 
-                    dans les "for". Cependant, le validateur affichait des warnings sur cela réclamant des ID ! C'est pourquoi nous avons utilisés
-                    des ID ici. -->
-                    <label for="email_input">Votre adresse mail : </label>
-                    <input type="text" id="email_input" class="form-control" placeholder="example@xyz.com">
+                <h3>Votre compte :</h3>
+                <!-- Je suis conscient que dans le cours, on utilisait l'attribut NAME dans les input, et c'est celui-ci que l'on mettait 
+                dans les "for". Cependant, le validateur affichait des warnings sur cela réclamant des ID ! C'est pourquoi nous avons utilisés
+                des ID ici. -->
+                <label for="email_input">Votre adresse mail : </label>
+                <input type="text" id="email_input" class="form-control" placeholder="example@xyz.com">
 
-                    <label for="nom_input">Nom : </label>
-                    <input type="text" id="nom_input" class="form-control" placeholder="Jean">
+                <label for="nom_input">Nom : </label>
+                <input type="text" id="nom_input" class="form-control" placeholder="Jean">
 
-                    <label for="prenom_input">Prénom : </label>
-                    <input type="text" id="prenom_input" class="form-control" placeholder="Valjean">
+                <label for="prenom_input">Prénom : </label>
+                <input type="text" id="prenom_input" class="form-control" placeholder="Valjean">
 
-                    <label for="connaissance_input">Comment nous avez-vous connu?</label>
-                    <textarea id="connaissance_input" class="form-control" placeholder="Dites nous tout : on lira tout, promis!"></textarea>
+                <label for="connaissance_input">Comment nous avez-vous connu?</label>
+                <textarea id="connaissance_input" class="form-control" placeholder="Dites nous tout : on lira tout, promis!"></textarea>
 
-                    <label for="code_input">Code promotionnel : </label>
-                    <input type="text" id="code_input" class="form-control" placeholder="Optionnel">
+                <label for="code_input">Code promotionnel : </label>
+                <input type="text" id="code_input" class="form-control" placeholder="Optionnel">
 
-                    <h3>Paiement :</h3>
+                <h3>Paiement :</h3>
 
-                    <div id="proprietaire">
-                            <label for="nom_input2">Nom : </label>
-                            <input type="text" id="nom_input2" class="form-control" placeholder="Prénom du titulaire">
-        
-                            <label for="prenom_input2">Prénom : </label>
-                            <input type="text" id="prenom_input2" class="form-control" placeholder="Nom du titulaire">
+                <div id="proprietaire">
+                    <label for="nom_input2">Nom : </label>
+                    <input type="text" id="nom_input2" class="form-control" placeholder="Prénom du titulaire">
 
-                            <label for="adresse_input">Adresse de facturation</label>
-                            <textarea id="adresse_input" class="form-control" placeholder="N°, Rue, Ville, Pays, Code Postal."></textarea>
+                    <label for="prenom_input2">Prénom : </label>
+                    <input type="text" id="prenom_input2" class="form-control" placeholder="Nom du titulaire">
 
-                            <h4>Type de carte :</h4>
-                            <div class="control">
-                                    <label class="radio">
-                                      <input type="radio" name="carte">
-                                      Visa
-                                    </label>
-                                    <label class="radio">
-                                      <input type="radio" name="carte">
-                                      MasterCard
-                                    </label>
-                                    <label class="radio">
-                                      <input type="radio" name="carte">
-                                      CB
-                                    </label>
-                            </div>
+                    <label for="adresse_input">Adresse de facturation</label>
+                    <textarea id="adresse_input" class="form-control" placeholder="N°, Rue, Ville, Pays, Code Postal."></textarea>
 
-                            <label for="no_carte_input">N° de carte :</label>
-                            <input type="number" id="no_carte_input" class="form-control" placeholder="XXX XXX XXX XXX XXX X (16)">
-
-                            <label for="crypto_carte_input">Cryptogramme :</label>
-                            <input type="number" id="crypto_carte_input" class="form-control" placeholder="XXX (3)">
-
-                            <label for="date_carte_input">Date d'expiration :</label>
-                            <input type="text" id="date_carte_input" class="form-control" placeholder="mm/aaaa"> <!-- Essayé avec type=date, force l'utilisation du jour, pas cohérent pour CB, pas réussi à changer sans JS -->
+                    <h4>Type de carte :</h4>
+                    <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="carte">
+                                Visa
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="carte">
+                                MasterCard
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="carte">
+                                CB
+                            </label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Acheter!</button>
+                    <label for="no_carte_input">N° de carte :</label>
+                    <input type="number" id="no_carte_input" class="form-control" placeholder="XXX XXX XXX XXX XXX X (16)">
+
+                    <label for="crypto_carte_input">Cryptogramme :</label>
+                    <input type="number" id="crypto_carte_input" class="form-control" placeholder="XXX (3)">
+
+                    <label for="date_carte_input">Date d'expiration :</label>
+                    <input type="text" id="date_carte_input" class="form-control" placeholder="mm/aaaa"> <!-- Essayé avec type=date, force l'utilisation du jour, pas cohérent pour CB, pas réussi à changer sans JS -->
+                </div>
+
+                <button type="submit" class="btn btn-primary">Acheter!</button>
             </form>
             <table>
                 <tr id="titre_commande">
@@ -120,7 +120,7 @@
                 </tr>
 
             </table>
-    </div>
+        </div>
     </section>
 
     <footer>
@@ -133,17 +133,17 @@
                 <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
               </div>
           </div>
-      <div id="col_contact">
-        <h3>Nous contacter :</h3>
-        <p><span>Téléphone : </span>0672894351</p>
-        <p><span>Mail : </span>contact@adopteunprojet.fr</p>
-      </div>
-      <div id="col_adresse">
-        <h3>Adresse :</h3>
-        <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
-        <img src="assets/map.png" alt="map"/>
-      </div>
-  </footer>
+        <div id="col_contact">
+            <h3>Nous contacter :</h3>
+            <p><span>Téléphone : </span>0672894351</p>
+            <p><span>Mail : </span>contact@adopteunprojet.fr</p>
+        </div>
+        <div id="col_adresse">
+            <h3>Adresse :</h3>
+            <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
+            <img src="assets/map.png" alt="map"/>
+        </div>
+    </footer>
     <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

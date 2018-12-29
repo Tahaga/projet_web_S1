@@ -6,80 +6,70 @@
     <title>Adopte un projet.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/description_produits_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/description_produits.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo_transparence.png" />
 </head>
 <body>
-        <header>
-                <div id="left_flex_container"><a id="lienImg" href="../index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
-                    <a href="../index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a></div>
-                    <form method="GET" action="../index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
-                    <form method="GET" action="../a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
-                    <form method="GET" action="../confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
-                <div class="btn-group">
-                    <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Valider sa commande
-                    </button>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../a_propos/a_propos.html">Qui sommes-nous?</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../index.html">Accueil</a>
-                    </div>
-                  </div>
-                <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
-                <a id="lien_rech" href="../resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
-            </header>
- 
+    <header>
+        <div id="left_flex_container"><a id="lienImg" href="../index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
+            <a href="../index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a>
+        </div>
+        <form method="GET" action="../index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
+        <form method="GET" action="../a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
+        <form method="GET" action="../confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
+        <div class="btn-group">
+            <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Détails
+            </button>
+            <div class="dropdown-menu">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../index.html">Accueil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../confirmation_commande/confirmation_commande.html">Valider sa commande</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../a_propos/a_propos.html">Qui sommes-nous?</a> 
+                </div>
+        </div>
+        <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
+        <a id="lien_rech" href="../resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
+    </header>
+
     <section>
-        <h1>  Description du produit : 'Meteo'</h1>
-        <a href="../resultat_recherche/resultat_recherche.html"><button type="submit" class="btn btn-primary">Retour</button></a>
-        <a href="#"><button type="submit" class="btn btn-primary" id="btn_suiv">Suivant</button></a>
-        <img src="assets/nuages.PNG" alt="image_box_meteo" id="img_meteo"/>
-    <div class="box_desc" id="box_det_un" >
-        <h2> Meteo</h2> 
-        <p>Après tout, tout le monde dépend de la météo. De plus, qui sort sans son smartphone, aujourd’hui ? Une application indiquant la météo actuelle et même des prévisions pourrait s’avérer bien utile !</p>
-        <p>Voici une liste des <strong>fonctionnalités</strong> phares de votre future application :</p>
-        <ul>
-            <li>Afficher la météo actuelle, illustrée d’une icône correspondante</li>
-            <li>Permettre de visualiser les prévisions météorologiques pour la semaine</li>
-            <li>Laisser l’utilisateur choisir les données qu’il veut afficher sur son interface : humidité, vitesse du vent…</li>
-            <li>Changer de localisation pour voir la météo à d’autres endroits</li>
-            <li>Proposer des idées de tenues en fonction de la météo</li>
-            <li>Une version « premium » permettant d’avoir des prévisions plus précises, de deux semaines, sans publicités….</li>
-        </ul>
-        <p>Et bien d’autres que vous découvrirez en achetant le projet !</p>
-        <p>En prime, vous aurez droit à un <strong>suivi de votre projet par un professionnel d’une durée de 30 jours, renouvelable trois fois!</strong> Ainsi, vous aurez toutes les clés en main pour réussir, car telle est la promesse de <em>adopteunprojet.com</em></p>
-
-       <div id="exempl_q">
-        <img src="assets/exempl1_meteo.png" alt="exempl1_meteo" id="exempl1_meteo">
-        <a href="../confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Ajouter au Panier</button></a>
-    </div>
-    </div>
-
-    <h3>Projet similaires :</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5 box_desc">
-              <h2>Calculatrice</h2>
-              <img src="assets/calculatrice.png" alt="image_box_calculatrice"/>
-              <p>
-                Pour les plus petits budgets, nous proposons des idées plus simples.
-                Une calculatrice pratique et epurée serait une <strong> très bonne</strong> idée <strong> simplissime</strong> à réaliser!
-              </p>
-              <a href="#"><button type="button" class="btn">Détails</button></a>
+        <h1>  Description du produit : "Météo"</h1>
+        <div id="conteneur">
+            <div id="descrip">
+                <h2>Météo</h2> 
+                <img src="assets/meteo.jpg" alt="meteo">
+                <p>Après tout, tout le monde dépend de la météo. De plus, qui sort sans son smartphone, aujourd’hui ? Une application indiquant la météo actuelle et même des prévisions pourrait s’avérer bien utile!</p>
+                <p>Voici une liste des <strong>fonctionnalités</strong> phares de votre future application :</p>
+                <ul>
+                    <li>Afficher la météo actuelle, illustrée d’une icône correspondante</li>
+                    <li>Permettre de visualiser les prévisions météorologiques pour la semaine</li>
+                    <li>Laisser l’utilisateur choisir les données qu’il veut afficher sur son interface : humidité, vitesse du vent…</li>
+                    <li>Changer de localisation pour voir la météo à d’autres endroits</li>
+                    <li>Proposer des idées de tenues en fonction de la météo</li>
+                    <li>Une version « premium » permettant d’avoir des prévisions plus précises, de deux semaines, sans publicités….</li>
+                </ul>
+                <p>Et bien d’autres que vous découvrirez en achetant le projet!</p>
+                <p>En prime, vous aurez droit à un <strong>suivi de votre projet par un professionnel d’une durée de 30 jours, renouvelable trois fois!</strong> Ainsi, vous aurez toutes les clés en main pour réussir, car telle est la promesse de <em>adopteunprojet.com</em></p>
+                <form method="GET" action="#"><button class="btn btn-primary">Ajouter au panier!</button></form>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-5 box_desc">
-              <h2>Cheminée</h2>
-                <img src="assets/cheminé.png" alt="image_box-cheminé">
-              <p>Qui n'a jamais rêvé de pouvoir se réchauffer grâce à son smartphone? C'est pourquoi l'application cheminée<em> doit exister</em> ! Celà permettrait aux gens de se chauffer en contrepartie d'une <strong>rémunération</strong> !</p>
-              <a href="#"><button type="button" class="btn">Détails</button></a>
+            <div id="comm">
+                <h2>Commentaires</h2>
+                <p>
+                    <cite> Un excellent projet qui m'a fait découvrir le SDK Android tout en approfondissant mes connaissance en Java!</cite>
+                </p>
+                <h6>- Marie-Louise, 2016.</h6>
+                <p>
+                    <cite> Très satisfait! Il y a même une version en Kotlin, et le suivi m'a bien aidé. Je recommande.</cite>
+                </p>
+                <h6>- Hector, 2018.</h6>
+                <h5>Donnez votre avis!</h5>
+                <input class="form-control" placeholder="Votre pseudo...">
+                <textarea class="form-control" placeholder="Rédigez votre commentaire ici..."></textarea>
+                <form method="GET" action="#"><button class="btn btn-primary">Envoyer le commentaire!</button></form>
             </div>
         </div>
-    </div>
-
-
     </section>
 
     <footer>
@@ -90,22 +80,23 @@
                 <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
                 <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
                 <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
-              </div>
-          </div>
-      <div id="col_contact">
+            </div>
+        </div>
+    <div id="col_contact">
         <h3>Nous contacter :</h3>
         <p><span>Téléphone : </span>0672894351</p>
         <p><span>Mail : </span>contact@adopteunprojet.fr</p>
-      </div>
-      <div id="col_adresse">
+    </div>
+    <div id="col_adresse">
         <h3>Adresse :</h3>
         <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
         <img src="assets/map.png" alt="map"/>
-      </div>
-  </footer>
+    </div>
+    </footer>
     <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>

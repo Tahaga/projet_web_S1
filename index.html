@@ -10,105 +10,106 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo_transparence.png" />
 </head>
 <body>
-    <header>
-        <div id="left_flex_container"><a id="lienImg" href="index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
-        <a href="index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a></div>
-        <form method="GET" action="index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
-        <form method="GET" action="a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
-        <form method="GET" action="confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
-        <div class="btn-group">
-            <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Accueil
-            </button>
-            <div class="dropdown-menu">
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="a_propos/a_propos.html">Qui sommes-nous?</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="confirmation_commande/confirmation_commande.html">Valider sa commande</a>
-            </div>
+  <header>
+    <div id="left_flex_container">
+      <a id="lienImg" href="index.html"><img id="logoImg" src="assets/logo_fond.png" alt="Notre logo"></a>
+      <a href="index.html" id="lien_texte"><p id="titre">adopte<span id="un">un</span>projet.com</p></a>
+    </div>
+    <form method="GET" action="index.html"><button type="submit" class="btn btn-primary" id="accueil_but">Accueil</button></form>
+    <form method="GET" action="a_propos/a_propos.html"><button type="submit" class="btn btn-primary">Qui sommes-nous?</button></form>
+    <form method="GET" action="confirmation_commande/confirmation_commande.html"><button type="submit" class="btn btn-primary">Valider sa commande</button></form>
+    <div class="btn-group">
+      <button id="mobile_dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Accueil
+      </button>
+      <div class="dropdown-menu">
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="a_propos/a_propos.html">Qui sommes-nous?</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="confirmation_commande/confirmation_commande.html">Valider sa commande</a>
+      </div>
+    </div>
+    <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
+    <a id="lien_rech" href="resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
+  </header>
+  <section id="accueil">
+    <img src="assets/logo_fond.png" alt="Notre logo" style="opacity: 0.8" >
+    <h1>adopteunprojet.com</h1>
+    <p>Tout développeur en a rêvé. Nous l'avons créé.</p>
+  </section>
+  <section id="presentation">
+    <h2>Une idée partie d'un constat simple.</h2>
+    <img id="imageDev" src="assets/Developer.png" alt="Developpeur">
+    <p>Tout développeur doit faire face à l'apprentissage de nouveaux langages régulièrement. Suivre un tutoriel, c'est bien sympa, mais chacun veut évidemment tester les connaissances acquises, et cela en se lancant dans un nouveau <strong>projet</strong>. 
+    Mais lequel d'entre nous n'a jamais fait face au manque d'idée? Trouver des idées de projets qui changent du jeu du <cite>le plus ou le moins</cite>, ce n'est pas si simple.
+    C'est pourquoi nous allons vous faire gagner du temps si précieux, et <strong>faire de vous un meilleur développeur</strong>. Nous vous proposons ainsi des idées de projets à des prix abordables. Tous vos collègues seront jaloux. ;-)</p>
+  </section>
+  <section id="mobile_promos">
+      <h1>Nos projets en promotion:</h1>
+  </section>
+  <section id="projet_stars">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/wear_meteo.jpg" alt="image app meteo"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Les projets en promo: </h2>
+            <h5>Application météo pour Android Wear</h5>
+            <p>Très apprécié par nos clients pour apprendre à connaître le framework lié à Android Wear.</p>
           </div>
-        <input id="barre_recherche" type="text" name="recherche" class="form-control" placeholder="Rechercher un projet...">
-        <a id="lien_rech" href="resultat_recherche/resultat_recherche.html"><img src="assets/search.png" alt="rechercher" id="recherche"></a>
-    </header>
-    <section id="accueil">
-        <img src="assets/logo_fond.png" alt="Notre logo" style="opacity: 0.8" >
-        <h1>adopteunprojet.com</h1>
-        <p>Tout développeur en a rêvé. Nous l'avons créé.</p>
-    </section>
-    <section id="presentation">
-        <h2>Une idée partie d'un constat simple.</h2>
-        <img id="imageDev" src="assets/Developer.png" alt="Developpeur">
-        <p>Tout développeur doit faire face à l'apprentissage de nouveaux langages régulièrement. Suivre un tutoriel, c'est bien sympa, mais chacun veut évidemment tester les connaissances acquises, et cela en se lancant dans un nouveau <strong>projet</strong>. 
-        Mais lequel d'entre nous n'a jamais fait face au manque d'idée? Trouver des idées de projets qui changent du jeu du <cite>le plus ou le moins</cite>, ce n'est pas si simple.
-        C'est pourquoi nous allons vous faire gagner du temps si précieux, et <strong>faire de vous un meilleur développeur</strong>. Nous vous proposons ainsi des idées de projets à des prix abordables. Tous vos collègues seront jaloux. ;-)</p>
-    </section>
-    <section id="mobile_promos">
-        <h1>Nos projets en promotion:</h1>
-    </section>
-    <section id="projet_stars">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/wear_meteo.jpg" alt="image app meteo"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                                <h2>Les projets en promo: </h2>
-                                <h5>Application météo pour Android Wear</h5>
-                                <p>Très apprécié par nos clients pour apprendre à connaître le framework lié à Android Wear.</p>
-                              </div>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/black_computer.jpg" alt="Second slide"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                                <h2>Les projets en promo: </h2>
-                                <h5>Le raspberry pi podomètre</h5>
-                                <p>Apprendre à bricoler son raspberry pi tout en programmant le podomètre en Python!</p>
-                              </div>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/unity.jpg" alt="Third slide"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                                <h2>Les projets en promo: </h2>
-                                <h5>Programme ton premier FPS dans unity!</h5>
-                                <p>Ce projet te permettra de pratique les bases d'unity et d'approfondir tes connaissances.</p>
-                              </div>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Prochain</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Précédent</span>
-                    </a>
-                  </div>
-    </section>
+        </div>
+        <div class="carousel-item">
+          <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/black_computer.jpg" alt="Second slide"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Les projets en promo: </h2>
+            <h5>Le raspberry pi podomètre</h5>
+            <p>Apprendre à bricoler son raspberry pi tout en programmant le podomètre en Python!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="confirmation_commande/confirmation_commande.html"><img class="d-block w-100" src="assets/unity.jpg" alt="Third slide"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Les projets en promo: </h2>
+            <h5>Programme ton premier FPS dans unity!</h5>
+            <p>Ce projet te permettra de pratique les bases d'unity et d'approfondir tes connaissances.</p>
+          </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Prochain</span></a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précédent</span>
+        </a>
+    </div>
+  </section>
 
-    <footer>
-        <div id="col_reseaux">
-            <h3>Nos réseaux sociaux:</h3>
-            <div id="img_reseaux">
-              <a href="https://facebook.com"><img src="assets/facebook.png" alt="facebook logo"></a>
-              <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
-              <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
-              <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
-            </div>
-          </div>
-      <div id="col_contact">
-        <h3>Nous contacter:</h3>
-        <p><span>Téléphone : </span>0672894351</p>
-        <p><span>Mail : </span>contact@adopteunprojet.fr</p>
+  <footer>
+    <div id="col_reseaux">
+      <h3>Nos réseaux sociaux:</h3>
+      <div id="img_reseaux">
+        <a href="https://facebook.com"><img src="assets/facebook.png" alt="facebook logo"></a>
+        <a href="http://plus.google.com"><img src="assets/google-plus.png" alt="google+ logo"></a>
+        <a href="https://instagram.com"><img src="assets/instagram.png" alt="instagram logo"></a>
+        <a href="https://twitter.com"><img src="assets/twitter.png" alt="twitter logo"></a>
       </div>
-      <div id="col_adresse">
-        <h3>Adresse:</h3>
-        <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
-        <img src="assets/map.png" alt="map"/>
-      </div>
+    </div>
+    <div id="col_contact">
+      <h3>Nous contacter:</h3>
+      <p><span>Téléphone : </span>0672894351</p>
+      <p><span>Mail : </span>contact@adopteunprojet.fr</p>
+    </div>
+    <div id="col_adresse">
+      <h3>Adresse:</h3>
+      <p>92 Boulevard Niels Bohr, Villeurbanne, France. </p>
+      <img src="assets/map.png" alt="map"/>
+    </div>
   </footer>
-    <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+  <p>© COPYRIGHT ADOPTEUNPROJET.COM 2018</p>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
 </body>
 </html>
 

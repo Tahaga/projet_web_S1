@@ -8,7 +8,12 @@ DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
 
 body {
     font-family : 'Open Sans';
-    background-color: rgba(28, 36, 39, 0.904);
+    background-attachment: fixed;
+    background-color: #293435; /* AINSI NOUS SOMMES SÛRS QUE TOUT LE MONDE A UN BACKGROUND DE NOTRE COULEUR */
+    background: -moz-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%, rgba(26,38,39,0.92) 1%, rgba(26,38,39,0.95) 99%, rgba(26,38,39,0.95) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1a2627', endColorstr='#f21a2627',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 
@@ -141,14 +146,17 @@ section div div div div {
 }
 
 section div p {
-    height: 20vh;
     text-align: justify;
     color: darkslategray;
 }
 section h2 {
     margin-top: 5%;
-
 }
+
+.col-sm-6 img {
+    height: 21vh;
+}
+
 section div img {
     height: 19vh;
     margin-top: 5%;
@@ -175,6 +183,23 @@ section .btn:hover{
 .col-sm-5 {
     background-color: grey;
     color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+}
+
+.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+}
+
+.col-sm-5 img, .col-sm-6 img {
+    height: 10em;
+    width: auto;
+    align-self: center;
 }
 
 .col-sm-5 p {
