@@ -171,9 +171,22 @@ color : hotpink;
 
 }
 section div p {
-    text-align: justify;
+    text-align: left;
     color: darkslategray;
+    text-indent: 0%;
+    padding: 0vw 2vw;
 }
+
+section div li {
+    color : darkslategray;
+    text-align: left;
+    font-style: italic;
+}
+
+#exempl1_meteo {
+    margin-bottom: 3vh;
+}
+
 section h2 {
     margin-top: 5%;
     margin-bottom: 5%;
