@@ -10,11 +10,7 @@ BACKGROUND GRADIENT : http://www.colorzilla.com/gradient-editor/
 body {
     font-family : 'Open Sans';
     background-attachment: fixed;
-    background-color: #293435; /* AINSI NOUS SOMMES SÛRS QUE TOUT LE MONDE A UN BACKGROUND DE NOTRE COULEUR */
-    background: -moz-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%, rgba(26,38,39,0.92) 1%, rgba(26,38,39,0.95) 99%, rgba(26,38,39,0.95) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1a2627', endColorstr='#f21a2627',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-color: #323838;
 }
 
 
