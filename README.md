@@ -1,7 +1,7 @@
 # projet_web_S1
 
 Maquette de site marchand statique pour le cours de web du semestre 1. </br>
-<strong>Preview ici : http://blaskodaniel.site/ </strong>. Elle est synchronisée avec le dépôt et correspond donc à la dernière version sur la branche "checkout_working". 
+<strong>Preview ici : http://blaskodaniel.site/ </strong>. Elle est synchronisée avec le dépôt et correspond donc à la dernière version sur la branche "master". 
 
 <h4>NOUS SOMMES CONSCIENTS DES WARNINGS ENTRAÎNES PAR L'UTILISATION DES GRADIENTS (TOUS LES WARNINGS DU CSS LE SONT).
 NOUS AVONS FAIT EN SORTE QUE PEU IMPORTE LE NAVIGATEUR ET LA VERSION, UN FOND DE NOTRE COULEUR, AVEC OU SANS GRADIENT, S'AFFICHE.
