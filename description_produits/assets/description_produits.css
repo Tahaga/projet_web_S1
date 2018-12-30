@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans+Condensed:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* SOURCES
+TRANSITIONS : https://robots.thoughtbot.com/transitions-and-transforms
+DOCUMENTATION BOOTSTRAP/CSS : https://devdocs.io
+*/
+
+body {
+    font-family : 'Open Sans';
+    background-attachment: fixed;
+    background-color: #293435; /* AINSI NOUS SOMMES SÛRS QUE TOUT LE MONDE A UN BACKGROUND DE NOTRE COULEUR */
+    background: -moz-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%, rgba(26,38,39,0.92) 1%, rgba(26,38,39,0.95) 99%, rgba(26,38,39,0.95) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(26,38,39,0.92) 0%,rgba(26,38,39,0.92) 1%,rgba(26,38,39,0.95) 99%,rgba(26,38,39,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1a2627', endColorstr='#f21a2627',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+header {
+    height: 10vh;
+    background-color: #2C333A;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 50; /* Un peu abusé, mais je m'assure que le header passe devant tout, cf le problème de png */
+}
+
+header .btn {
+    color: white;
+    height: 100%;
+    width: 10vw;
+    /*min-width: 11em; /* à adapter pour le responsive */
+    padding: 0em 0.7em;
+    margin: 0em 1em;
+    font-size: 10pt;
+}
+
+header p {
+    font-size: 20pt;
+    display:inline;
+    font-family: 'Major mono display';
+    color: white;
+    font-weight: bold;
+}
+
+header a{
+    display : inline;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+#un  {
+    font-weight: 100;
+}
+
+#lien_texte {
+    align-self: center;
+    margin-left: 1em;
+}
+
+
+#logoImg {
+    height: 8vh;
+}
+
+#lienImg{
+    align-self: center;
+    margin-left: 0.7em;
+}
+
+#left_flex_container{
+    align-self: center;
+    margin-right: auto;
+    display:flex;
+}
+
+header input{
+    color: #2C333A;
+    align-self: center;
+    order: 1;
+}
+
+header .form-control {
+    height: 5vh;
+    width : 20vw;
+    font-size: 10pt;
+    transition: all 2s ease-in-out;
+}
+
+header .form-control:focus{
+    width: 120%;
+}
+
+#lien_rech {
+    order: 3;
+    height: 10vh;
+    display: flex;
+}
+
+#recherche {
+    order: 2;
+    height: 6vh;
+    align-self: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    align-self: center;
+}
+
+#recherche:hover{
+    height: 8vh;
+}
+
+
+.btn {
+    background-color: #2C333A;
+    border: #2C333B;
+}
+
+header form {
+    display: inline;
+}
+
+.btn-group {
+    display: none;
+}
+
+
+.btn:hover{
+    background-color: #F48FB1;
+}
+
+section {
+    text-align: center;
+}
+
+section h1{
+    margin-top: 15vh;
+    color: rgba(244, 143, 177, 0.6);
+    font-style: italic;
+}
+
+#conteneur {
+    display: flex;
+    justify-content: space-around;
+}
+
+#descrip{
+    padding: 1rem;
+    background-color: grey;
+    width: 60vw;
+    margin: 5vh 2vw;
+    border-radius: 1vh;
+    text-align: left;
+}
+
+#descrip form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#descrip button{
+    background-color:rgba(244, 143, 177, 0.6);
+}
+
+#descrip .btn:hover{
+    width: 19%;
+    color: black;
+ }
+
+#descrip h2 {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#descrip img {
+    align-self: center;
+    float: right;
+    width: 30vw;
+    border-radius: 1vh;
+    margin: 2vh 2vw;
+}
+
+#comm {
+    background-color: rgba(244, 143, 177, 0.4);
+    width: 30vw;
+    margin: 5vh 2vw;
+    border-radius: 1vh;
+    padding: 1rem 1rem;
+}
+
+#comm p{
+    text-align: justify;
+}
+
+#comm h6{
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#comm h5 {
+    font-size: 1.5rem;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0.5rem 0rem;
+    margin: 1.5rem 0rem;
+}
+
+#comm textarea{
+    height: 15vh;
+    width: 28vw;
+    color: grey;
+    margin-top: 2vh;
+}
+
+#comm button{
+    margin-top: 1.38rem;
+    background-color:rgba(244, 143, 177, 0.6);
+}
+
+#comm .btn:hover{
+    width: 50%;
+    color: black;
+ }
+
+ #comm h2 {
+    font-size: 2rem;
+    text-align: right;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1 span{
+    color: lightgray;
+}
+
+
+
+footer {
+    border-top: 1px dotted grey;
+    color: grey;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+	background-color :rgb(22, 28, 31);
+    border-bottom: 1px dotted grey;
+}
+
+footer > div {
+    width: 33%;
+}
+
+footer p span{
+    font-weight: bold;
+}
+
+footer h3 {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+footer img {
+    width: 65%;
+    align-self: center;
+}
+
+#img_reseaux img {
+    width: 3em;
+    margin: 1em;
+}
+
+body:last-child {
+    text-align: center;
+    color : lightgray;
+    
+}
+
+
+@media (max-width: 630px){
+    body{
+        width: 100vw;
+    }
+    header {
+        position: fixed;
+    }
+
+    #lien_texte, header .btn{
+        display: none;
+    }
+
+    #mobile_dropdown, .btn-group{
+        display: block;
+        margin-right: 0.5em;
+        width: auto;
+    }
+
+    #recherche {
+        margin-right: 0.1em;
+    }
+
+    #conteneur{
+        flex-direction: column;
+    }
+
+    #conteneur div{
+        width: 95vw;
+    }
+
+    #comm textarea {
+        width: 86vw;
+    }
+
+    #descrip img {
+        float: none;
+        width: 80vw;
+    }
+
+    #descrip .btn:hover, #comm .btn:hover{
+        width: 80%;
+        color: black;
+     }
+
+
+    footer {
+        align-items: baseline;
+    }
+    
+    
+    footer h3 {
+        margin-top: 2em;
+        font-size: 1.3rem;
+        padding-bottom: 3%;
+    }
+    
+    footer img {
+        display: none;
+    }
+    
+    #img_reseaux img {
+        display: initial;
+        width: 2em;
+        margin: 0.4em;
+    }
+
+    body:last-child {
+        font-size: 1rem;
+    }
+
+}
