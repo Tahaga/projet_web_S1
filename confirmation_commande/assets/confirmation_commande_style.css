@@ -164,6 +164,9 @@ section form .btn{
     width: 10em;
     text-align: center;
     height: 3em;
+    background-color: white;
+    color:hotpink;
+    font-weight: bold;
 }
 
 
