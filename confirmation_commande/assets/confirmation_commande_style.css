@@ -34,7 +34,6 @@ header .btn {
     color: white;
     height: 100%;
     width: 10vw;
-    /*min-width: 11em; /* à adapter pour le responsive */
     padding: 0em 0.7em;
     margin: 0em 1em;
     font-size: 10pt;
@@ -61,7 +60,7 @@ header a:hover{
     font-weight: 100;
 }
 
-/* fusionner en un lien sur le div! */
+
 #lien_texte {
     align-self: center;
     margin-left: 1em;
